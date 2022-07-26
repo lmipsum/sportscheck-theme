@@ -1,0 +1,240 @@
+@function icon($icon-name, $color){
+  $icons: (
+    android: '<svg version="1.1" id="android" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64.968px" height="72.974px" viewBox="0 0 64.968 72.974" style="enable-background:new 0 0 64.968 72.974;" xml:space="preserve"><path style="fill:#{$color};" d="M5.052,25.01C2.262,25.01,0,27.271,0,30.062v6.265v3.617v6.264c0,2.791,2.262,5.053,5.052,5.053 s5.052-2.262,5.052-5.053v-6.264v-3.617v-6.265C10.104,27.271,7.842,25.01,5.052,25.01z"/><path style="fill:#{$color};" d="M59.915,25.01c-2.789,0-5.052,2.262-5.052,5.052v6.265v3.617v6.264c0,2.791,2.263,5.053,5.052,5.053 c2.791,0,5.053-2.262,5.053-5.053v-6.264v-3.617v-6.265C64.968,27.271,62.706,25.01,59.915,25.01z"/><line style="fill:#{$color};" x1="13.104" y1="25.034" x2="51.863" y2="25.034"/><path style="fill:#{$color};" d="M13.12,25.034c-0.002,0.097-0.017,0.19-0.017,0.287v16.393v4.395v7.606 c0,3.389,2.747,6.134,6.135,6.134c0.048,0,0.092-0.012,0.139-0.012h0.944v1.821v6.265c0,2.79,2.262,5.051,5.051,5.051 c2.791,0,5.052-2.261,5.052-5.051v-6.265v-1.821h4.119v1.821v6.265c0,2.79,2.261,5.051,5.052,5.051c2.789,0,5.052-2.261,5.052-5.051 v-6.265v-1.821h0.943c0.048,0,0.092,0.012,0.139,0.012c0.086,0,0.17-0.01,0.256-0.012h0.097v-0.006 c3.224-0.184,5.782-2.847,5.782-6.116v-7.606v-4.395V25.321c0-0.097-0.015-0.19-0.017-0.287H13.12z"/><path style="fill:#{$color};" d="M42.854,7.651l3.766-5.28c0.481-0.675,0.325-1.611-0.35-2.093c-0.672-0.478-1.611-0.324-2.093,0.351 l-3.772,5.289c-0.102,0.143-0.169,0.299-0.215,0.459c-2.362-0.921-4.964-1.44-7.705-1.44s-5.344,0.52-7.706,1.44 c-0.046-0.16-0.113-0.316-0.216-0.459l-3.773-5.289c-0.48-0.675-1.419-0.831-2.092-0.35c-0.675,0.48-0.831,1.418-0.35,2.092 l3.767,5.28c-5.32,3.036-8.884,8.327-8.994,14.383h38.727C51.736,15.979,48.173,10.688,42.854,7.651z M24.834,15.564 c-1.063,0-1.925-0.861-1.925-1.924c0-1.063,0.861-1.925,1.925-1.925c1.063,0,1.924,0.861,1.924,1.925 C26.758,14.703,25.896,15.564,24.834,15.564z M40.134,15.564c-1.063,0-1.925-0.861-1.925-1.924c0-1.063,0.861-1.925,1.925-1.925 s1.925,0.861,1.925,1.925C42.059,14.703,41.197,15.564,40.134,15.564z"/></svg>',
+    arrow_down: '<svg version="1.1" id="arrow_down" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13.326px" height="8.078px" viewBox="0 0 13.326 8.078" style="enable-background:new 0 0 13.326 8.078;" xml:space="preserve"><polyline style="fill:none;stroke:#{$color};stroke-width:2;stroke-miterlimit:10;" points="0.707,0.707 6.664,6.664 12.619,0.707 "/></svg>',
+    arrow_right: '<svg version="1.1" id="arrow_left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.756px" height="45.353px" viewBox="0 0 20.756 45.353" style="enable-background:new 0 0 20.756 45.353;" xml:space="preserve"><polyline style="fill:none;stroke:#{$color};stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="1.504,43.853 19.256,22.676 1.5,1.5 "/></svg>',
+    checkmark: '<svg version="1.1" id="checkmark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.156px" height="19.064px" viewBox="0 0 20.156 19.064" style="enable-background:new 0 0 20.156 19.064;" xml:space="preserve"><polyline style="fill:none;stroke:#{$color};stroke-width:4;stroke-linejoin:bevel;stroke-miterlimit:10;" points="1.664,9.548 7.267,17.956 18.492,1.109 "/></svg>',
+    clock: '<svg version="1.1" id="clock" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24.047px" height="24.047px" viewBox="0 0 24.047 24.047" style="enable-background:new 0 0 24.047 24.047;" xml:space="preserve"><circle style="fill:none;stroke:#{$color};stroke-width:2;stroke-miterlimit:10;" cx="12.023" cy="12.023" r="11.023"/><polyline style="fill:none;stroke:#{$color};stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="12.023,4.268 12.023,12.023 15.839,14.948 "/></svg>',
+    close: '<svg version="1.1" id="close" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13.388px" height="13.388px" viewBox="0 0 13.388 13.388" style="enable-background:new 0 0 13.388 13.388;" xml:space="preserve"><line style="fill:none;stroke:#{$color};stroke-width:2;stroke-miterlimit:10;" x1="0.707" y1="0.707" x2="12.681" y2="12.681"/><line style="fill:none;stroke:#{$color};stroke-width:2;stroke-miterlimit:10;" x1="12.681" y1="0.707" x2="0.707" y2="12.681"/></svg>',
+    ios: '<svg version="1.1" id="ios" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="56.529px" height="70.429px" viewBox="0 0 56.529 70.429" style="enable-background:new 0 0 56.529 70.429;" xml:space="preserve"><g><path style="fill:#{$color};" d="M48.507,37.405c0-5.353,2.699-10.072,6.808-12.88c-3.959-6.056-10.267-7.714-13.143-7.714 c-4.36,0-12.587,3.433-12.587,3.433h-0.393c0,0-8.228-3.433-12.588-3.433S0,20.615,0,37.776s11.781,32.652,18.367,32.652 s6.437-2.875,10.825-2.875c0.066,0,0.133-0.012,0.196-0.034c0.063,0.022,0.128,0.034,0.196,0.034c4.388,0,4.238,2.875,10.824,2.875 c4.809,0,12.38-8.26,16.12-19.396C51.746,48.37,48.507,43.269,48.507,37.405z"/><path style="fill:#{$color};" d="M42.026,0.074c-3.061-0.479-7.052,1.391-10.016,5.001c-2.963,3.611-4.017,7.892-2.949,10.8 c3.062,0.479,7.053-1.391,10.016-5.002C42.041,7.263,43.093,2.983,42.026,0.074z"/></g></svg>',
+    smile: '<svg version="1.1" id="Ebene_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="51.5px" height="51.5px" viewBox="0 0 51.5 51.5" style="enable-background:new 0 0 51.5 51.5;" xml:space="preserve"><circle style="fill:none;stroke:#{$color};stroke-width:2;stroke-miterlimit:10;" cx="25.75" cy="25.75" r="24.75"/><g><ellipse style="fill:#{$color};" cx="20" cy="16.35" rx="2.05" ry="3.351"/><ellipse style="fill:#{$color};" cx="31.5" cy="16.35" rx="2.05" ry="3.351"/></g><path style="fill:none;stroke:#{$color};stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;" d="M40.4,25.05 c0,8.092-6.56,14.65-14.65,14.65c-8.091,0-14.65-6.559-14.65-14.65"/></svg>',
+    phone: '<svg version="1.1" id="phone" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="92.889px" height="99.705px" viewBox="0 0 92.889 99.705" style="enable-background:new 0 0 92.889 99.705;" xml:space="preserve"><path style="fill-rule:evenodd;clip-rule:evenodd;fill:#{$color};" d="M20.022,0.083C25.984-1.44,40.061,18.525,36.6,26.922 c-2.247,5.451-9.65,7.014-11.578,11.973c-1.939,4.99,1.62,10.724,3.486,13.683c4.353,6.898,10.514,13.507,17.17,18.155 c2.023,1.414,5.281,4.205,9.472,3.158c6.649-1.662,8.82-12.842,18.748-9.868c4.864,1.457,20.85,13.129,18.813,20.393 c-0.885,3.158-6.615,7.494-10.459,10.131c-10.358,7.106-24.108,6.298-34.996,1.053C28.922,86.766,10.528,65.232,2.854,45.67 C-5.372,24.704,5.364,5.12,20.022,0.083z"/></svg>',
+    external: '<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve"><g><g><path style="fill:#{$color};" d="M12.007,15.6H2.961c-1.412,0-2.56-1.147-2.56-2.561V3.994c0-1.412,1.148-2.56,2.56-2.56h4.677v2.118H2.961 c-0.243,0-0.441,0.199-0.441,0.441v9.045c0,0.243,0.198,0.442,0.441,0.442h9.045c0.243,0,0.441-0.199,0.441-0.442V8.518h2.117 v4.521C14.566,14.451,13.418,15.6,12.007,15.6z"/></g></g><g><g><path style="fill:#{$color};" d="M7.484,10.105c-0.407,0-0.813-0.155-1.124-0.467c-0.621-0.619-0.621-1.625,0-2.246l5.188-5.188	c0.62-0.621,1.626-0.621,2.246,0c0.62,0.62,0.62,1.626,0,2.247L8.607,9.641C8.297,9.95,7.891,10.105,7.484,10.105z"/></g><g><g><polygon style="fill:#{$color};" points="8.793,0.365 15.617,7.189 15.617,0.367"/></g></g></g></svg>',
+    xmas: '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 125" enable-background="new 0 0 100 100" xml:space="preserve"><path fill="#{$color}" d="M94.613,94.455L77.301,66.992c0,0,5.791,0.973,5.896,0.973c0.655,0,1.277-0.322,1.654-0.873  c0.438-0.641,0.466-1.477,0.073-2.145l-15.75-25.108c0,0,3.961,0.479,4.042,0.479c0.697,0,1.353-0.365,1.717-0.975  c0.407-0.678,0.376-1.533-0.079-2.18l-23.3-33.809c-0.371-0.528-0.974-0.846-1.62-0.852c-0.007,0-0.014,0-0.02,0  c-0.639,0-1.239,0.305-1.617,0.82L25.115,37.132c-0.473,0.645-0.516,1.508-0.111,2.196c0.363,0.618,1.023,0.989,1.727,0.989  c0.082,0,3.996-0.479,3.996-0.479L14.985,64.896c-0.419,0.668-0.408,1.52,0.029,2.176c0.376,0.562,1.005,0.893,1.667,0.893  c0.109,0,5.604-0.908,5.604-0.908L5.394,94.441c-0.381,0.619-0.397,1.395-0.043,2.029c0.354,0.633,1.022,1.025,1.748,1.025H92.9  c0.724,0,1.391-0.389,1.745-1.02C95.001,95.846,94.988,95.074,94.613,94.455z"/></svg>'
+  );
+
+  @return url('data:image/svg+xml;base64,str2base64("<?xml version="1.0" encoding="iso-8859-1"?>#{map-get($icons, $icon-name)}")');
+}
+
+.icon {
+  width: (50px / 2);
+  height: (50px / 2);
+  display: inline-block;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icon-android {
+  background-image: icon(android, "#FFFFFF");
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.icon-xmas {
+  background-image: icon(xmas, "#FFFFFF");
+  vertical-align: bottom;
+  &-primary {
+    background-image: icon(xmas, $brand-primary);
+  }
+}
+
+.icon-arrow_down {
+  background-image: icon(arrow_down, "#FFFFFF");
+}
+
+.filters-button-group .icon-arrow_down {
+  background-image: icon(arrow_down, "#4a4a49");
+}
+
+footer .filters-button-group .icon-arrow_down {
+  background-image: icon(arrow_down, "#FFFFFF");
+}
+
+.icon-arrow_right {
+  background-image: icon(arrow_right, "#FFFFFF");
+}
+
+.icon-checkmark {
+  background-image: icon(checkmark, "#4B4A49");
+}
+
+.icon-clock {
+  background-image: icon(clock, "#EE7203");
+}
+
+.icon-smile {
+  background-image: icon(smile, $brand-primary);
+}
+
+#opening .icon-clock {
+  background-image: icon(clock, "#FFFFFF");
+}
+
+.icon-close {
+  background-image: icon(close, "#4a4a49");
+}
+
+footer .icon-close {
+  background-image: icon(close, "#FFFFFF");
+}
+
+.icon-ios {
+  background-image: icon(ios, "#FFFFFF");
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.icon-phone {
+  background-image: icon(phone, "#4a4a49");
+}
+
+svg#pdf {
+  font-weight: bold;
+  max-width: 100%;
+  height: auto;
+}
+
+.slick-slider {
+  .slick-prev,
+  .slick-next {
+    width: 21px;
+    height: 45px;
+    &:before {
+      @extend .icon;
+      @extend .icon-arrow_right;
+      opacity: 1;
+      content: '';
+      width: inherit;
+      height: inherit;
+    }
+    &:hover,&:focus {
+      &:before {
+        @extend .opacity_60;
+      }
+    }
+  }
+  .slick-prev {
+    left: -35px;
+  }
+  .slick-next {
+    right: -35px;
+  }
+  .slick-prev:before {
+    transform: rotate(-180deg);
+  }
+}
+
+@media all and (min-width: $screen-xs-min) {
+  .icon {
+    width: 49px;
+    height: 49px;
+    &.icon-close {
+      width: 36px;
+      height: 37px;
+    }
+    &.icon-ios {
+      width: 35px;
+      height: 43px;
+    }
+    &.icon-android {
+      width: 40px;
+      height: 44px;
+    }
+    &.icon-phone {
+      width: 21px;
+      height: 23px;
+    }
+    &.icon-checkmark {
+      width: 25px;
+      height: 24px;
+    }
+    &.icon-arrow_down {
+      width: 20px;
+      height: 13px;
+    }
+  }
+  .slick-slider {
+    .slick-prev,
+    .slick-next {
+      &:before {
+        width: inherit;
+        height: inherit;
+      }
+    }
+  }
+}
+
+@media all and (min-width: $screen-md-min) {
+  .icon {
+    width: 25px;
+    height: 24px;
+    &.icon-phone {
+      width: 16px;
+      height: 17px;
+    }
+    &.icon-close {
+      width: 14px;
+      height: 13px;
+      vertical-align: top;
+    }
+    &.icon-arrow_down {
+      width: 14px;
+      height: 8px;
+    }
+    &.icon-ios {
+      width: 24px;
+      height: 29px;
+    }
+    &.icon-android {
+      width: 27px;
+      height: 30px;
+    }
+    &.icon-phone {
+      width: 16px;
+      height: 17px;
+    }
+    &.icon-checkmark {
+      width: 21px;
+      height: 19px;
+    }
+    &.icon-smile {
+      width: 52px;
+      height: 53px;
+    }
+  }
+  .slick-slider {
+    .slick-prev,
+    .slick-next {
+      &:before {
+        width: inherit;
+        height: inherit;
+      }
+    }
+    .slick-prev {
+      left: -45px;
+    }
+    .slick-next {
+      right: -45px;
+    }
+  }
+  .navbar .icon-clock {
+    background-image: icon(clock, "#FFFFFF");
+  }
+}
+
+@media all and (max-width: ($screen-xs-min - 1)) {
+  .slick-slider {
+    .slick-next, .slick-prev {
+      top: 37%;
+      width: 10px;
+      height: 23px;
+    }
+    .slick-prev {
+      left: -25px;
+    }
+    .slick-next {
+      right: -25px;
+    }
+  }
+}

@@ -1,0 +1,97 @@
+.btn {
+  font-family: $headings-font-family;
+  padding: 8px 12px 6px;
+  outline: none !important;
+  border: 0;
+  &:hover {
+  //&:not(:hover):not(:active):not(:focus) {
+    @extend .opacity_86;
+  }
+  &:not([class*=share]) {
+    text-transform: uppercase;
+    min-width: 160px;
+  }
+  overflow: hidden;
+  position: relative;
+  &.share {
+    min-width: initial !important;
+    .icon {
+      font-family: 'Socialico';
+      font-size: 2.35em;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      line-height: .95;
+      font-weight: 500;
+      display: block;
+      height: 100%;
+      width: .9em;
+      text-align: right;
+    }
+  }
+  .icon-facebook {
+    background: #365396;
+    padding-right: 0.15em;
+  }
+  .icon-twitter {
+    background: #00a8f0;
+    padding-right: 0.15em;
+  }
+  &.icon-share {
+    min-width: 45px !important;
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      border-top: .2em solid white;
+      width: 1.3em;
+      left: 0;
+      right: 0;
+      margin: auto;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &:after {
+      transform: translateY(-50%) rotate(90deg);
+    }
+  }
+}
+
+.btn.share span:not([class*=icon]) {
+  padding-left: 2em;
+  font-family: 'PT Sans';
+}
+
+.btn.btn-icon {
+  position: relative;
+  padding: 8px 45px 6px;
+  .icon:first-child {
+    position: absolute;
+    left: 10px;
+  }
+  .icon:last-child {
+    position: absolute;
+    right: 10px;
+  }
+}
+.btn-sc {
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+.btn-primary.active,
+.btn-primary:active,
+.btn-primary:hover,
+.comment-form .open>input.dropdown-toggle[type=submit],
+.comment-form input.active[type=submit],
+.comment-form input[type=submit]:active,
+.comment-form input[type=submit]:hover,
+.open>.btn-primary.dropdown-toggle {
+  background-color: $brand-primary;
+  border-color: $brand-primary;
+}
+
+@media all and (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
+  .btn {
+    padding: 12px 25px 10px;
+    min-width: 235px;
+  }
+}

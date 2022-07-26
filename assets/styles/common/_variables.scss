@@ -1,0 +1,56 @@
+$slick-font-path: "../fonts/";
+$slick-loader-path: "../images/";
+
+// Typography
+$font-family-sans-serif:  "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$headings-font-family:    "Khand", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$headings-font-weight:    600;
+
+// Scaffolding
+$text-color:            #4a4a49;
+$link-hover-decoration: none;
+
+// Glyphicons font path
+$icon-font-path:        "../fonts/";
+
+// Grid settings
+$main-sm-columns:       12;
+$sidebar-sm-columns:    4;
+
+// Colors
+$brand-primary:         #ee7202;
+$link-color:            $brand-primary;
+$link-hover-color:      $link-color;
+
+// Buttons
+$btn-font-weight:        600;
+$btn-border-radius-base: 0;
+
+// Media queries breakpoints
+$screen-desktop:             992px !default;
+
+// Navbar
+$navbar-height:                     51px;
+$navbar-default-bg:                 #ffffff;
+$navbar-default-border:             $brand-primary;
+$navbar-default-link-color:         #4a4a49;
+$navbar-default-link-active-color:  $brand-primary;
+$navbar-default-link-active-bg:     transparent;
+
+// Navbar toggle
+$navbar-default-toggle-hover-bg:           transparent;
+$navbar-default-toggle-icon-bar-bg:        $brand-primary;
+$navbar-default-toggle-border-color:       transparent;
+
+// Grid system
+$grid-gutter-width:         30px !default;
+$grid-float-breakpoint:     $screen-desktop;
+
+// Container sizes
+$container-tablet:             100%;
+$container-desktop:            (900px + $grid-gutter-width);
+$container-large-desktop:      (1140px + $grid-gutter-width);
+
+// Forms
+$input-bg: transparent;
+$input-border-radius: 0;

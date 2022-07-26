@@ -1,0 +1,639 @@
+/*
+ * in the beginning there was only one general class to do all the magic...then pixel picking...
+ * and this is that point when dozens of months old css hacks must be must be modified 1 day before the handover.
+ */
+
+.navbar-default .menu-menu-1-container .navbar-nav>li.current-page-ancestor>a {
+  color: $brand-primary;
+}
+
+.keybenefits .slick-slide .text-center {
+  transform: translateY(-50%);
+  position: relative;
+  top: 30%;
+  @media all and (min-width: $screen-xs-min) {
+    top: 15%;
+  }
+}
+
+@media all and (min-width: $screen-md-min) {
+  .page.sportscheck-fitness-muenchen:not([class*=home]) .section.teaser {
+    background-position: left calc(50% + 405px) bottom -48px;
+    background-size: auto 647px;
+  }
+  .page.padel:not([class*=home]) .section.teaser {
+    background-position: left calc(50% + 399px) top -5px;
+    background-size: auto 647px;
+  }
+  .page.soccer:not([class*=home]) .section.teaser {
+    background-position: left calc(50% + 306px) top -50px;
+    background-size: auto 647px;
+  }
+  .page.parent-pageid-21:not([class*=home]) .section.teaser,
+  .page.tennis:not([class*=home]) .section.teaser {
+    background-position: left calc(50% + 511px) top -42px;
+    background-position: left calc(50% + 507px) top -35px;
+    background-size: auto 646px;
+  }
+  .section.teaser.skrollable {
+    background-size: auto 647px !important;
+  }
+  .page:not([class*=home]):not([class*=page-id-551]):not([class*=tennis]):not([class*=club]) .section.teaser {
+    background-position: left calc(50% + 395px) top -40px !important;
+    background-size: auto 647px !important;
+    background-position: left calc(50% + 417px) top -26px!important;
+    background-size: auto 669px!important;
+  }
+  .parent-pageid-21:not([class*=home]).meine-ziele .teaser.section {
+    background-position: left calc(50% + 395px) bottom -125px !important;
+    background-size: auto 647px !important;
+  }
+  .page-id-9.gastronomie:not([class*=home]):not([class*=page-id-551]):not([class*=tennis]):not([class*=club]) .teaser.section {
+    background-position: left calc(50% + 395px) bottom -200px !important;
+  }
+
+  .page.hotel:not([class*=home]):not([class*=page-id-551]):not([class*=tennis]):not([class*=club]) .teaser.section,
+  .parent-pageid-11:not([class*=home]):not([class*=page-id-551]):not([class*=tennis]):not([class*=club]) .teaser.section {
+    background-position: left calc(50% + 395px) top 20px !important;
+  }
+
+  .page.sportscheck-fitness-muenchen:not([class*=home]) .section.teaser {
+    background-size: auto 647px;
+  }
+
+  .dropdown:not([class*=filters-button-group]) .dropdown-menu {
+    width: 100%;
+  }
+
+  #menu-menu-1.navbar-nav>li>a:focus, #menu-menu-1.navbar-nav>li>a:hover {
+    color: $brand-primary;
+    background-color: transparent;
+  }
+}
+
+@media all and (max-width: $screen-sm-max) {
+  .home .section.teaser {
+    background-size: auto 518px !important;
+    &.has_event {
+      background-position: center bottom 0 !important;
+      &#fitness {
+        background-position: right -198px bottom 0 !important;
+      }
+    }
+  }
+  .page-template-template-blog:not([class*=page-id-551]):not([class*=page-id-7]) .section.teaser {
+    background-size: auto 518px !important;
+  }
+  .page-template-template-blog:not[class*=page-id-7] .teaser.section {
+    background-position: right 0px bottom -570px;
+    //background-size: auto;
+  }
+  .page.parent-pageid-21:not([class*=home]) .section.teaser {
+    background-position: center bottom -170px;
+    background-size: auto 518px !important;
+  }
+  article .section:first-of-type .post-excerpt > div:last-of-type {
+    text-align: center !important;
+  }
+  .page.sportscheck-fitness-muenchen:not([class*=home]) .section.teaser {
+    background-repeat: no-repeat;
+    background-size: auto 647px;
+    background-position: left calc(50% + 146px) bottom -282px;
+    background-size: auto 485.25px;
+    background-position: left calc(50% + 146px) bottom -136px;
+  }
+  .page.padel:not([class*=home]) .section.teaser {
+    background-size: auto 485.25px;
+    background-position: center bottom -114px;
+    background-size: auto 430px;
+    background-position: center bottom -60px;
+  }
+  .page.gastronomie:not([class*=home]) .section.teaser {
+    background-position: center bottom -200px;
+  }
+  .page.partner:not([class*=trainer]) .section.teaser .content {
+    margin-bottom: 0;
+  }
+  .page.soccer:not([class*=home]) .section.teaser {
+    background-position: center bottom -130px;
+    background-size: auto 485.25px;
+  }
+  .page.tennis:not([class*=home]) .section.teaser {
+    background-position: center bottom -135px;
+    background-size: auto 485.25px;
+    background-size: auto 430px;
+    background-position: center bottom -80px;
+  }
+  .contact .slick-slide .image-container {
+    padding-bottom: 47%;
+    img {
+      max-height: initial;
+      position: absolute;
+      height: auto;
+      bottom: -141px;
+    }
+  }
+  .section.mobile_teaser .btn {
+    max-width: 258px;
+  }
+  .trainer.grid-item .content {
+    padding-bottom: 15px;
+  }
+  .parent-pageid-17.moeglichkeiten:not([class*=page-id-551]):not([class*=page-id-7]) .teaser.section {
+    background-position: left bottom -155px;
+  }
+  .filters-button-group {
+    margin-top: 10px;
+  }
+  .parent-pageid-17.meine-ziele .teaser.section, .parent-pageid-17.moeglichkeiten .teaser.section {
+    background-size: auto 515px;
+    background-position: center bottom -155px;
+  }
+
+  .parent-pageid-19:not([class*=home]).moeglichkeiten .teaser.section {
+    background-size: 512px auto;
+    background-position: center bottom -20px;
+  }
+  .parent-pageid-23:not([class*=home]).moeglichkeiten .teaser.section {
+    background-position: center bottom -176px;
+  }
+}
+
+@media all and (max-width: ($screen-xs-min - 1)) {
+  .home {
+    .section.teaser#fitness {
+      background-position: right -300px bottom -131px;
+      &.has_event {
+        background-position: right -300px bottom -65px !important;
+      }
+    }
+  }
+  header, .main, footer, .bg-primary {
+    .container:not([class*=grid]) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  .container>.navbar-header, header .container>.navbar-collapse {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  header {
+    &.navbar-default .nav-row>div .nav>li {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .navbar-toggle.navbar-left {
+      padding: 9px 15px;
+      margin-left: 0;
+    }
+  }
+  a[href="#opening"] {
+    &.btn, &.btn:focus, &.hover {
+      margin-right: 0;
+      padding: 8px 15px 6px;
+      span:first-child {
+        margin-right: 0;
+      }
+    }
+  }
+  .page .teaser.section {
+    background-position: center bottom -200px;
+    background-size: auto 529px;
+    &.has_event {
+      background-position: center bottom -100px !important;
+    }
+  }
+  .teaser.section>.container {
+    padding-top: 25px;
+    padding-bottom: 15px;
+  }
+  .gallery.section, .contact.section {
+    .container {
+      padding-left: $grid-gutter-width/2;
+      padding-right: $grid-gutter-width/2;
+    }
+  }
+  .gallery.section .image-container {
+    border: 5px solid #ffffff;
+  }
+  .checkmark-list ul li:before {
+    top: -6px;
+  }
+  .keybenefits.section .slick-slide .image-container {
+    height: 50px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  .page-template-template-trainer.page {
+    .section.teaser .content {
+      margin-bottom: 20px;
+    }
+  }
+  footer .sponsoren {
+    img {
+      height: 32px;
+      width: auto;
+      max-width: initial;
+    }
+    li:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+  .section.ql .eq-height {
+    margin-bottom: 10px;
+  }
+  .section.module.card .subtitle {
+    margin-bottom: 20px;
+  }
+  .icon-phone {
+    height: 15px;
+  }
+  .section.mobile_teaser .btn {
+    max-width: 129px;
+  }
+  /*
+  .club.page {
+    .teaser.section {
+      background-position: left bottom -142px;
+      background-size: auto 414px;
+    }
+  }
+  */
+  .page-template-template-list .section-header {
+    max-height: 150px;
+  }
+}
+
+.google-maps {
+  position: relative;
+  padding-bottom: 50%;
+  height: 0;
+  overflow: hidden;
+  //float: left;
+  width: 100%;
+  //margin-top: 20px;
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 1;
+  }
+}
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 0;
+}
+
+.section.contact .text-lowercase {
+  @media all and (min-width: $screen-xs-min) {
+    font-size: 20px;
+  }
+  @media all and (min-width: $screen-md-min) {
+    font-size: 16px;
+  }
+}
+
+@media all and (min-width: $screen-md-min) {
+  .page.home .section.teaser {
+    opacity: 0;
+  }
+  .page.home .section.teaser {
+    &:not([class*=skrollable]):not([id*=club]) {
+      background-size: auto 647px!important;
+      background-position: left calc(50% + 395px) bottom -72px !important;
+    }
+    &#club {
+      background-position:left calc(50% + 395px) bottom 0;
+      height: 600px;
+      &.skrollable {
+        > .container > .content {
+          //top: 194px;
+        }
+      }
+    }
+    &#fitness {
+      height: 560px;
+      &.skrollable {
+        background-position: left calc(50% + 395px) bottom 0;
+        > .container > .content {
+          //top: 1354px;
+        }
+      }
+    }
+    &#soccer {
+      height: 560px;
+      &.skrollable {
+        background-position: left calc(50% + 395px) top 647px;
+        > .container > .content {
+          //top: 1914px;
+        }
+      }
+    }
+    &#tennis {
+      height: 560px;
+      &.skrollable {
+        background-position: left calc(50% + 395px) top 647px;
+        > .container > .content {
+          //top: 2474px;
+        }
+      }
+    }
+    &#padel {
+      height: 560px;
+      &.skrollable {
+        background-position: left calc(50% + 395px) top 10px;
+        > .container > .content {
+          //top: 3034px;
+        }
+      }
+    }
+  }
+}
+
+.single-post article > .section:first-child {
+  padding: 40px 0;
+  + .section {
+    padding: 40px 0;
+  }
+}
+
+.page.parent-pageid-21.trainer:not([class*=home]) .section.teaser {
+  @media all and (min-width: $screen-md-min) {
+    background-position: left calc(50% + 170px) top -35px!important;
+  }
+  @media all and (min-width: $screen-lg-min) {
+    background-position: left calc(50% + 390px) top -35px!important;
+  }
+}
+
+.main a[target="_blank"]:not([href$="pdf"]):not([class*=btn-icon]) {
+  display: inline-block;
+  &:not([class*=btn-primary]) {
+    margin-left: 21px;
+  }
+
+  &:before {
+    /*@media all and(min-width: $screen-sm-min){
+      display: none;
+    }
+    */
+    //@media all and(min-width: $screen-md-min){
+      content: '';
+      background-image: icon(external, "#EE7203");
+      display: inline-block;
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      margin-left: -21px;
+      top: 3px;
+    //}
+
+  }
+
+  &.btn-primary {
+    text-indent: 21px;
+    &:before {
+      background-image: icon(external, "#FFFFFF");
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.page.page-template-template-contentpage .section.gallery + .section + .section {
+  padding-top: 20px;
+}
+
+li.dropdown:hover .dropdown-menu {
+  @media all and (min-width: $screen-md-min) {
+    z-index: 10000;
+  }
+}
+
+@media all and (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+  footer .default {
+    .container > div {
+      padding: 0 5px;
+      &:nth-of-type(3) {
+        padding: 0 15px;
+        > h4 {
+          margin-left: -10px;
+        }
+        .partners > div {
+          padding: 0 5px;
+        }
+      }
+    }
+  }
+}
+
+.page-id-7, .erlebnisanlage { //erlebnisanlage
+  &.page:not([class*=home]):not([class*=page-id-551]):not([class*=tennis]):not([class*=club]) .section.teaser {
+    background-position: right 33px bottom -162px!important;
+    @media all and (min-width: $screen-md-min) {
+      background-position: left calc(50% + 250px) top -26px!important;
+    }
+  }
+}
+.page-id-551, .sportscheck-soccer-moeglichkeiten { // soccer möglichkeiten
+  &.page:not([class*=home]):not([class*=tennis]):not([class*=club]) .section.teaser {
+    @media all and (min-width: $screen-md-min) {
+      background-position: left calc(50% + 276px) bottom 0 !important;
+      background-size: auto 475px !important;
+    }
+    @media all and (min-width: $screen-lg-min) {
+      background-size: auto 527px !important;
+    }
+  }
+}
+.page-id-571, .sportscheck-soccer-fussballschulen { // soccer fussballschulen
+  &.page:not([class*=home]):not([class*=tennis]):not([class*=club]) .section.teaser {
+    @media all and (min-width: $screen-md-min) {
+      background-position: left calc(50% + 281px) top -26px!important;
+      background-size: auto 586px!important;
+    }
+    @media all and (min-width: $screen-lg-min) {
+      background-position: left calc(50% + 417px) top -26px!important;
+      background-size: auto 669px!important;
+    }
+  }
+}
+
+// teaser image rework with the new images based on psd
+.page:not([class*=home]):not([class*=page-id-551]):not([class*=tennis]):not([class*=club]) {
+  &.page-id-17, &.sportscheck-fitness-muenchen { // fitness page
+    .section.teaser {
+      background-size: auto 485.25px!important;
+      background-position: left calc(50% + 177px) bottom -141px!important;
+      @media all and (min-width: $screen-xs-min) {
+        background-position: left calc(50% + 177px) bottom -128px !important;
+      }
+      @media all and (min-width: $screen-md-min) {
+        background-position: left calc(50% + 417px) top 3px!important;
+        background-size: auto 669px!important;
+      }
+    }
+  }
+  &.page-id-457, &.sportscheck-fitness-moeglichkeiten, // fitness möglichkeiten
+  &.page-id-393, &.sportscheck-fitness-ziele { // fitness meine ziele
+    .section.teaser {
+      background-position: left 31px bottom -172px;
+      @media all and (min-width: $screen-xs-min) {
+        background-position: left 188px bottom -153px;
+      }
+      @media all and (min-width: $screen-md-min) {
+        background-position: left calc(50% + 398px) top -65px!important;
+        background-size: auto 627px!important;
+      }
+    }
+  }
+  &.page-id-207, &.sportscheck-fitness-trainer { // fitness trainer page
+    .section.teaser {
+      @media all and (min-width: $screen-md-min) {
+        background-position: left calc(50% + 299px) top -37px!important;
+        background-size: 465px auto !important;
+      }
+    }
+  }
+  &.page-id-19, &.sportscheck-soccer-muenchen { // soccer page
+    .section.teaser {
+      @media all and (min-width: $screen-md-min) {
+        background-position: left calc(50% + 285px) top -26px !important;
+      }
+      @media all and (min-width: $screen-lg-min) {
+        background-position: left calc(50% + 325px) top -50px!important;
+        background-size: auto 700px!important;
+      }
+    }
+  }
+  &.page-id-23, &.sportscheck-padel-muenchen { // padel page
+    .section.teaser {
+      @media all and (min-width: $screen-md-min) {
+        background-position: left calc(50% + 280px) bottom !important;
+        background-size: auto 510px !important;
+      }
+      @media all and (min-width: $screen-lg-min) {
+        background-position: left calc(50% + 426px) top -26px!important;
+        background-size: auto 669px!important;
+      }
+    }
+  }
+  &.page-id-430, &.sportscheck-padel-moeglichkeiten { // padel möglichkeiten
+    .section.teaser {
+      @media all and (min-width: $screen-md-min) {
+        background-position: left calc(50% + 411px) top -29px!important;
+        background-size: auto 610px!important;
+      }
+    }
+  }
+}
+
+.page:not([class*=home]):not([class*=page-id-551]):not([class*=club]) {
+  &.page-id-21, &.sportscheck-tennis-muenchen, // tennis page
+  &.page-id-506, &.sportscheck-tennis-moeglichkeiten, // tennis möglichkeiten
+  &.page-id-520, &.sportscheck-tennis-tennisschule { // tennis tennisschule
+    .section.teaser {
+      @media all and (min-width: $screen-md-min) {
+        background-position: left calc(50% + 514px) bottom -40px!important;
+        background-size: auto 646px!important;
+      }
+      @media all and (min-width: $screen-lg-min) {
+        background-position: left calc(50% + 514px) top -36px!important;
+      }
+    }
+  }
+  &.page-id-493, &.sportscheck-tennis-ziele { // tennis meine ziele
+    .section.teaser {
+      @media all and (min-width: $screen-md-min) {
+        background-position: left calc(50% + 292px) bottom -150px!important;
+        background-size: auto 672px!important;
+      }
+    }
+  }
+}
+
+label[for*=terms] > a {
+  text-decoration: underline;
+  font-weight: normal !important;
+  &:after {
+    content: none !important;
+  }
+}
+
+div#cookie-law-info-bar {
+  background-color: rgba(#000000, .7) !important;
+  color: white !important;
+  border: none !important;
+  a:after {
+    content: none !important;
+  }
+  span {
+    max-width: 1200px;
+    width: 100%;
+    display: inline-block;
+    margin: auto;
+    padding: 40px 20px 45px;
+    text-align: left;
+    position: relative;
+    font-size: 16px;
+    @media all and (min-width: $screen-xs-min) {
+      padding: 40px 220px 35px 30px;
+      max-width: 1200px;
+    }
+    @media all and (min-width: $screen-md-min) {
+      padding: 40px 220px 35px 20px;
+      max-width: 930px;
+    }
+    @media all and (min-width: $screen-lg-min) {
+      padding: 40px 220px 35px 45px;
+      max-width: 1200px;
+    }
+    .cli-plugin-button {
+      @extend .btn;
+    }
+    .cli-plugin-button {
+      @extend .btn-primary;
+    }
+    .cli-plugin-button {
+      background: #ee7202 !important;
+      font-size: 20px;
+      padding: 10px 12px 6px !important;
+      font-weight: 600;
+      border: none;
+      box-shadow: none;
+      max-width: 154px;
+      min-width: 1px !important;
+      width: 100%;
+      @media all and (min-width: $screen-xs-min) {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 20px;
+      }
+      @media all and (min-width: $screen-md-min) {
+        right: 10px;
+      }
+      @media all and (min-width: $screen-lg-min) {
+        right: 35px;
+      }
+      @media all and (max-width: ($screen-xs-min - 1)) {
+        display: block;
+        margin: 10px auto 0;
+      }
+    }
+    a#CONSTANT_OPEN_URL {
+      color: #ee7202 !important;
+    }
+  }
+}
+
+.entry-content img {
+  max-width: 100%;
+}

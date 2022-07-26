@@ -1,0 +1,361 @@
+@import url(https://fonts.googleapis.com/css?family=Khand:500,600,700&subset=latin-ext);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin-ext);
+@font-face {
+  font-family: 'Socialico';
+  src: url("../fonts/Socialico.eot?") format("eot"),
+       url("../fonts/Socialico.woff") format("woff"),
+       url("../fonts/Socialico.ttf") format("truetype"),
+       url("../fonts/Socialico.svg#Socialico") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: .1em;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: .25em;
+  &.subtitle {
+    margin-bottom: .55em;
+  }
+}
+
+.page:not([class*=home]) .section.teaser>.container {
+  position: relative;
+}
+
+h4.subtitle {
+  margin-top: 0;
+}
+
+.teaser.section {
+  h1.title {
+    margin-bottom: .05em;
+  }
+  h4.subtitle {
+    margin-bottom: .5em;
+  }
+}
+
+.slick-slide {
+  outline: none;
+}
+
+.checkbox {
+  min-height: 40px;
+}
+
+.opacity_60 {
+  opacity: .60;
+}
+
+.opacity_78 {
+  opacity: .78;
+}
+
+.opacity_86 {
+  opacity: .86;
+}
+
+*:not(li) > a {
+  &:not([class*=btn]):not([class*=dropdown-toggle]):not([class*=navbar-brand]):not([href="#opening"]):not([href*="mailto"]):not([href="#newsletter"]) {
+    font-weight: 700;
+    position: relative;
+    &:after {
+      content: '';
+      width: 100%;
+      position: absolute;
+      border-bottom: 2px solid #ee7202;
+      left: 0;
+      bottom: -4px;
+    }
+    &:hover {
+    //&:not(:hover):not(:active):not(:focus) {
+      @extend .opacity_86;
+      &:after {
+        @extend .opacity_86;
+      }
+    }
+  }
+}
+
+.section .teaser-container .teaser-content a:not([class*=btn]):not([class*=dropdown-toggle]):not([href="#opening"]):not([href*="mailto"]):not([href="#newsletter"]):after {
+  border-bottom: 2px solid #ffffff;
+}
+
+.filters-button-group {
+  background: #ffffff;
+  line-height: 45px;
+  margin-top: 40px;
+  .selected {
+    color: inherit;
+    cursor: pointer;
+    a {
+      color: inherit;
+    }
+    span {
+      margin-bottom: 0;
+    }
+  }
+  .icon {
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    right: 15px;
+  }
+  &.open {
+    .icon {
+      transform: translateY(-50%) rotate(180deg);
+    }
+  }
+  .dropdown-menu {
+    border-radius: 0;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: 2;
+    li {
+      cursor: pointer;
+    }
+  }
+}
+
+.checkmark-list {
+  margin-bottom: 35px;
+
+  ul {
+    list-style: none;
+    margin-bottom: 35px;
+    padding-left: 0;
+
+    li{
+      position: relative;
+      /*
+      &:before {
+        @extend .icon-checkmark;
+        content: '';
+        width: 21px;
+        height: 19px;
+        background-size: contain;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: -35px;
+        top: 6px;
+      }
+      */
+    }
+  }
+}
+
+.subtitle {
+  font-weight: 600;
+}
+
+.transition {
+  &-up {
+    transform: translateY(-100%);
+  }
+  &-down {
+    transform: translateY(100%);
+  }
+  &-up, &-down {
+    transition: ease all 2s;
+    &.in {
+      transform: translateY(0);
+    }
+  }
+}
+
+.menu-menu-1-container, .navbar .menu-menu-3-container {
+  font-size: 24px;
+}
+
+.menu-menu-2-container {
+  font-size: 32px;
+}
+
+.dropdown:not([class*=filters-button-group]) {
+  .dropdown-toggle .caret {
+    display: none;
+  }
+
+  .dropdown-menu {
+    background-color: transparent;
+    box-shadow: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+
+    >.active>a {
+      &:hover, &:focus {
+        background-color: rgba(#ffffff,0.14);
+        color: white;
+      }
+    }
+
+    >li {
+      &.active, &:focus, &:hover {
+        > a {
+          background-color: rgba(#ffffff,0.14);
+          color: white;
+        }
+      }
+      >a {
+        padding: 10px 15px 5px;
+        color: white;
+        &.active, &:focus, &:hover {
+          background-color: rgba(#ffffff,0.14);
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+@media all and (min-width: $screen-md-min) {
+  .nav>li, .nav>li>a, .dropdown:not([class*=filters-button-group]) {
+    position: static;
+  }
+
+  .navbar-nav {
+    position: relative;
+  }
+
+  .open:not([class*=filters-button-group]), .menu-item.dropdown:not([class*=filters-button-group]):hover,
+  .menu-item.current-page-parent.dropdown:not([class*=filters-button-group]) {
+    > a {
+      background-color: transparent;
+      color: #ee7202;
+    }
+    > .dropdown-menu {
+      display: flex;
+      background: $brand-primary;
+    }
+  }
+
+  #menu-menu-2 > .menu-item:hover > a {
+    background-color: transparent;
+    color: #ee7202;
+  }
+
+  .dropdown-menu {
+    font-size: 18px;
+  }
+
+  header .nav .active.dropdown:not([class*=filters-button-group]) .dropdown-menu {
+    display: flex;
+    z-index: 0;
+  }
+
+  .slick-outer-container {
+    left: calc(25% / 2);
+    width: 75%;
+  }
+}
+
+/*
+$('.main h1, footer .section.top h1').fontSize(58, 58);
+$('.main h3, footer .section.top h3, .main .trainer h2').fontSize(42, 32);
+$('.main h4.subtitle, footer .section.top h4.subtitle').fontSize(36, 32);
+$('.main h4:not(.subtitle):not(.image-caption), footer .section.top h4:not(.subtitle)').fontSize(36, 24);
+$('.main li > h4').fontSize(32, 24);
+$('.main .btn, .main .trainer h4, footer .section.top .btn').fontSize(30, 20);
+$('.main .club-prices h5').fontSize(28,20);
+$('.main p, .main p > span, footer .section.top p, footer .section.top p > span, .main li').fontSize(24, 16);
+*/
+/*
+h1 {
+  font-size: 58px;
+}
+
+h2 {
+  font-size: 42px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+li > h4 {
+  font-size: 32px;
+}
+
+h4, .btn {
+  font-size: 30px;
+}
+
+h5 {
+  font-size: 32px;
+}
+
+h6 {
+  font-size: 30px;
+}
+*/
+@media all and (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+  .menu-menu-1-container {
+    margin-left: -26px;
+  }
+  .menu-menu-1-container, .navbar .menu-menu-3-container {
+    font-size: 1.18vw;
+  }
+  .menu-menu-2-container {
+    font-size: 1.85vw;
+  }
+}
+
+@media all and (min-width: $screen-lg-min) {
+  .menu-menu-1-container {
+    margin-left: -7px;
+  }
+
+  .menu-menu-1-container, .navbar .menu-menu-3-container {
+    font-size: 16px;
+  }
+
+  .menu-menu-2-container {
+    font-size: 24px;
+  }
+
+  main .section {
+    .title {
+      font-size: 58px;
+    }
+
+    .subtitle {
+      font-size: 32px;
+    }
+  }
+
+  a[href="#opening"],
+  a[href="#newsletter"].close,
+  .section.gallery .image-caption p,
+  .section.gallery .image-caption .counter {
+    font-size: 16px;
+  }
+
+  #opening {
+    .title {
+      font-size: 32px;
+    }
+
+    .subtitle {
+      font-size: 20px;
+    }
+  }
+
+  &.section {
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 20px;
+  }
+}

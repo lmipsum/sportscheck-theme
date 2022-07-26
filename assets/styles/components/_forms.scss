@@ -1,0 +1,75 @@
+// Search form
+.search-form {
+  @extend .form-inline;
+}
+.search-form label {
+  font-weight: normal;
+  @extend .form-group;
+}
+.search-form .search-field {
+  @extend .form-control;
+}
+.search-form .search-submit {
+  @extend .btn;
+  @extend .btn-default;
+}
+textarea, input:not([class*=btn]):not([type="checkbox"]) {
+  width: 100%;
+  border: none;
+  padding: 11.5px 15px;
+}
+textarea {
+  resize: none;
+}
+.wpcf7 form > p:last-of-type {
+  display: none;
+}
+
+input[type="checkbox"] {
+  display: none;
+  + label {
+    position: relative;
+    padding-left: 45px;
+    &:before {
+      content: '';
+      position: absolute;
+      border: 5px solid $brand-primary;
+      width: 34px;
+      height: 34px;
+      left: 0;
+      top: 3px;
+    }
+  }
+  &:checked + label {
+    &:before {
+      background-color: $brand-primary;
+      background-image: icon(checkmark, "#FFFFFF");
+      background-repeat: no-repeat;
+      background-position: 50%;
+    }
+  }
+}
+
+.placeholder {
+  color: #4a4a49;
+}
+
+input.wpcf7-text::-webkit-input-placeholder,
+textarea.wpcf7-textarea::-webkit-input-placeholder {
+  color: rgba(#4a4a49,.6);
+}
+
+input.wpcf7-text:-moz-placeholder,
+textarea.wpcf7-textarea:-moz-placeholder {
+  color: rgba(#4a4a49,.6);
+}
+
+input.wpcf7-text::-moz-p,
+textarea.wpcf7-textarea::-moz-p {
+  color: rgba(#4a4a49,.6);
+}
+
+input.wpcf7-text:-ms-input-placeholder,
+textarea.wpcf7-textarea:-ms-input-placeholder {
+  color: rgba(#4a4a49,.6) !important;
+}

@@ -1,0 +1,1107 @@
+.page-template-default, .page-template-template-trainer, .page-template-template-blog {
+  &:not([class*=home]):not([class*=club]) .section:first-child,
+  &.home .teaser:not(:first-child),
+  .contact, .gallery {
+    .subtitle {
+      color: #ffffff;
+    }
+  }
+}
+
+.page-template-template-blog {
+  .section.teaser + .section {
+    margin-top: 20px;
+  }
+  .post {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e2e2e2;
+  }
+  &.partner {
+    .post {
+      padding-bottom: 25px;
+    }
+  }
+}
+
+.page-template-template-article,
+.page-template-template-list {
+  .section-header {
+    height: 315px;
+    background-color: #faf0e7;
+    > .container {
+      top: 50%;
+      position: relative;
+      transform: translateY(-50%);
+      z-index: 1;
+    }
+  }
+}
+
+.home .section.teaser {
+  border-bottom: 1px solid #ffffff;
+}
+
+.page:not([class*=trainer]) .section.teaser {
+  .content {
+    margin-bottom: 330px;
+  }
+  &.has_event .content {
+    margin-bottom: 230px;
+    @media all and (max-width: ($screen-xs-min - 1)) {
+      margin-bottom: 180px;
+    }
+  }
+}
+
+div.wpcf7-response-output {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  display: none;
+  padding-bottom: 60px;
+}
+
+.success h3 {
+  margin-top: 10px;
+}
+
+.section {
+  &.teaser {
+    background-repeat: no-repeat;
+    background-size: auto 529px;
+    background-position: right 33px bottom -162px;
+    &.skrollable {
+      background-position: 70% 50%;
+      overflow: hidden;
+    }
+    > .container {
+      display: flex;
+      flex-direction: column;
+      padding-top: 50px;
+      padding-bottom: 30px;
+    }
+  }
+
+  &.module.gallery, &.module.card, &.module.ql, &.contact, &.mobile_teaser {
+    > .container {
+      padding-top: 40px;
+      padding-bottom: 60px;
+    }
+  }
+
+  &.module.card {
+    .subtitle {
+      margin-bottom: 40px;
+    }
+    img {
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &.gallery, &.contact {
+    .image-caption .counter {
+      color: #ffffff;
+      white-space: nowrap;
+    }
+  }
+
+  &.keybenefits {
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .slick-slide {
+      padding-top: 15px;
+      padding-bottom: 17px;
+
+      .image-container {
+        height: 97px;
+      }
+
+      .image-caption {
+        margin-top: 2px;
+        margin-bottom: 2px;
+      }
+    }
+  }
+
+  &.ql .image-container, &.keybenefits .slick-slider .image-container {
+    display: flex;
+    align-items: center;
+  }
+
+  &.ql {
+    .image-container {
+      height: 165px;
+      float: left;
+      padding-right: 30px;
+      width: 25%;
+      align-items: baseline;
+      padding-top: 6px;
+      img {
+        width: 100%;
+        max-width: 100%;
+      }
+      + div {
+        float: left;
+        width: 75%;
+        h4 {
+          margin-top: 0;
+        }
+        + div {
+          padding-left: 25%;
+        }
+      }
+    }
+    .eq-height {
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &.gallery {
+    border-bottom: 1px solid #ffffff;
+    .image-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 46.875vw;
+      max-height: 500px;
+      overflow: hidden;
+      border: 10px solid white;
+      img {
+        object-fit: cover;
+        min-width: 100%;
+        min-height: 100%;
+      }
+    }
+
+    .slick-carousel {
+      margin-top: 14px;
+    }
+
+    .image-caption {
+      p {
+        display: flex;
+        margin-top: 10px;
+        justify-content: space-between;
+        max-width: 100%;
+        span {
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+
+  &.club_content .container > div {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    &:not(:nth-child(3)) {
+      background-image: url(../images/clubcard.png);
+      background-repeat: no-repeat;
+      background-size: 26%;
+      background-position: left 10px top 2%;
+    }
+    img {
+      width: 50%;
+      margin-bottom: 20px;
+    }
+    ul {
+      padding-left: 15px;
+      margin-top: 20px;
+      line-height: 1.8em;
+    }
+  }
+
+  .title {
+    color: $brand-primary;
+  }
+
+  .teaser-container {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+
+    .teaser-content {
+      padding: 30px 15px;
+    }
+
+    .teaser-content, .teaser-content a {
+      color: white;
+    }
+  }
+
+  .club-prices {
+    min-height: 115px;
+    width: 100%;
+    float: left;
+    position: relative;
+    > div {
+      background-color: inherit;
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+    }
+    h5 {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.trainer.grid-item {
+  .image-container {
+    height: 0;
+    padding-bottom: 75.312%;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    img {
+      object-fit: cover;
+      margin-right: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .content {
+    background-color: #f8f2f2;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    h2 {
+      margin-bottom: 0;
+    }
+    h4 {
+      margin-top: 0;
+    }
+    ul {
+      margin-left: 10px;
+      padding-left: 15px;
+    }
+  }
+}
+
+.grid {
+  margin-top: 20px;
+  margin-bottom: 120px;
+}
+
+.page-template-template-blog .section:last-of-type{
+  margin-bottom: 120px;
+}
+
+.contact {
+  .slick-slide {
+    background-color: rgba(#ffffff,.4);
+    padding-top: 18px;
+    padding-bottom: 10px;
+    margin-top: 12px;
+    text-align: center;
+    .image-container {
+      height: 275px;
+      overflow: hidden;
+      display: flex;
+      position: relative;
+      height: 0;
+      padding-bottom: 100%;
+      img {
+        object-fit: cover;
+        max-height: 100%;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+      }
+    }
+    .wpcf7-form {
+      margin-top: 25px;
+    }
+  }
+}
+
+.section.mobile_teaser {
+  .btn {
+    width: 48.5%;
+    min-width: initial;
+    max-width: 266px;
+    float: left;
+  }
+  .buttons {
+    text-align: center;
+    justify-content: center;
+    //display: flex;
+    @media all and (max-width: $screen-md-min) {
+      display: flex;
+    }
+    @media all and (min-width: $screen-md-min) {
+      float: right;
+    }
+    .btn:first-child {
+      margin-right: 7%;
+    }
+  }
+}
+
+.home .section.teaser {
+  background-position: center bottom -162px;
+}
+
+#club.section {
+  background-size: 365px 606px;
+}
+#fitness.section {
+  background-size: auto 468px;
+  //background-position: left 0 bottom -120px;
+  background-position: right -198px bottom -131px;
+}
+.club.page {
+  .teaser.section {
+    background-position: right -108px bottom -44px;
+  }
+}
+.parent-pageid-17.meine-ziele, .parent-pageid-17.moeglichkeiten {
+  .teaser.section {
+    background-size: 543px 515px;
+    background-position: right -108px bottom -155px;
+  }
+}
+#soccer.section,
+.parent-pageid-19.fussballschule .teaser.section {
+  background-size: auto 468px;
+}
+#tennis.section,
+.parent-pageid-21:not([class*=home]).meine-ziele .teaser.section {
+  background-size: auto 468px;
+}
+#padel.section,
+.parent-pageid-23:not([class*=home]).moeglichkeiten .teaser.section {
+  background-size: 458px 469px;
+}
+
+.parent-pageid-19:not([class*=home]).moeglichkeiten .teaser.section {
+  background-size: 512px auto;
+  background-position: right 116px bottom -20px;
+}
+
+.page-template-template-article,
+.page-template-template-list {
+  .grid-item {
+    padding-top: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e2e2e2;
+    h4 {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 94%;
+    }
+  }
+}
+
+.gallery.section, .trainer.grid-item, .contact {
+  .image-container.compat-object-fit {
+    background-size: cover;
+    background-position: center 0;
+    img {
+      opacity: 0;
+    }
+  }
+}
+
+.club.page .section.teaser {
+
+  background-image: url(../images/club.png);
+  background-position: right -37px bottom 0;
+  background-size: 723px;
+
+  .content {
+    margin-bottom: 226px;
+  }
+}
+
+@media all and (min-width: $screen-md-min) {
+  .home .section.teaser {
+    //opacity: 0;
+    height: 560px;
+    &:first-of-type {
+      height: 600px;
+    }
+  }
+}
+
+
+@media all and (min-width: $screen-xs-min) {
+  .club.page .section.teaser {
+
+    background-position: right -210px bottom 0;
+    background-size: 1447px;
+
+    .content {
+      margin-bottom: 452px;
+    }
+  }
+  .section.club_content {
+    .container > div {
+      &:not(:nth-child(3)) {
+        background-position: left 0 top 6%;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media all and (min-width: $screen-sm-min) {
+  .club.page .section.teaser {
+    background-position: right -74px bottom 0;
+  }
+
+  .section.mobile_teaser {
+    .buttons {
+      justify-content: center;
+    }
+    .btn:first-of-type {
+      margin-right: 30px;
+    }
+  }
+
+  .section.club_content {
+    .container > div {
+      &:not(:nth-child(3)) {
+        background-position: left 0 top 4%;
+      }
+    }
+  }
+}
+
+@media all and (min-width: $screen-md-min) {
+  .trainer.grid-item {
+    .image-container {
+      height: 280px;
+    }
+    .content {
+      ul {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .section.club_content {
+    .container > div {
+      &:not(:nth-child(3)) {
+        background-position: left 0 top 20%;
+      }
+    }
+  }
+
+  .section {
+    &.module.gallery, &.module.card, &.contact, &.mobile_teaser {
+      > .container {
+        padding-top: 112px;
+        padding-bottom: 115px;
+      }
+    }
+    &.contact {
+      > .container {
+        padding-top: 113px;
+      }
+    }
+    &.module.ql {
+      > .container {
+        padding-top: 107px;
+        padding-bottom: 90px;
+      }
+    }
+    &.club_content .container > div {
+      padding-top: 60px;
+      padding-bottom: 120px;
+      &:not(:nth-child(3)) {
+        padding-top: 120px;
+        padding-bottom: 60px;
+      }
+      ul {
+        padding-left: 20px;
+      }
+    }
+  }
+
+  .section.mobile_teaser {
+    .checkmark-list {
+      margin-top: 60px;
+      margin-bottom: 0;
+      .download {
+        @media all and (min-width: $screen-xs-min) {
+          font-size: 16px!important;
+          font-family: $font-family-sans-serif;
+          font-weight: 100;
+        }
+      }
+    }
+    .btn {
+      width: auto;
+      max-width: initial;
+      min-width: 160px;
+      &:first-of-type {
+        margin-right: 30px;
+      }
+    }
+    .buttons {
+      justify-content: initial;
+    }
+  }
+
+  .teaser-container {
+    padding: 0 32px;
+  }
+
+  .section {
+    &.teaser {
+      >.container {
+        flex-direction: row;
+      }
+      &.has_event .content, .content, .teaser-container {
+        margin-top: 138px;
+        margin-bottom: 94px;
+      }
+      .title {
+        margin-left: -15px;
+        margin-right: -18px;
+      }
+      &:not(:first-of-type) {
+        &.has_event .content, .content, .teaser-container {
+          margin-top: 103px;
+          margin-bottom: 84px;
+        }
+      }
+    }
+
+    &.ql {
+      .image-container {
+        float: none;
+        padding-right: 0;
+        width: auto;
+        align-items: center;
+        padding-top: 0;
+        img {
+          width: auto;
+          max-width: 100%;
+        }
+        + div {
+          float: none;
+          width: auto;
+          + div {
+            padding-left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .section {
+    &.teaser {
+      background-size: auto 659px;
+      background-position: 70% 100%;
+    }
+  }
+
+  .page:not([class*=home]) .section.teaser {
+    background-position: right 315px top -27px;
+    .content {
+      margin-top: 78px;
+      margin-bottom: 94px;
+    }
+  }
+
+  .page.gastronomie:not([class*=home]) .section.teaser {
+    background-position: 82% -15px;
+    background-size: 401px 650px;
+  }
+
+  .page.soccer:not([class*=home]),
+  .page.parent-pageid-19:not([class*=home]) {
+    .section.teaser {
+      background-position: right 0 top -50px;
+    }
+  }
+
+  .page.hotel:not([class*=home]) .section.teaser {
+    background-size: initial;
+    background-position: 73% -21px;
+  }
+
+  .page.tennis:not([class*=home]),
+  .page.padel:not([class*=home]),
+  .page.parent-pageid-21:not([class*=home]),
+  .page.parent-pageid-23:not([class*=home]){
+    .section.teaser {
+      background-position: right 0 top -26px;
+    }
+  }
+
+  .parent-pageid-21:not([class*=home]).trainer .teaser.section {
+    background-size: contain;
+    background-position: right 234px bottom 0 !important;
+  }
+
+  .parent-pageid-19:not([class*=home]).moeglichkeiten .teaser.section {
+    background-size: contain;
+    background-position: right 234px bottom 0px;
+  }
+
+  .home.page .section.teaser {
+    .content, &.has_event .content {
+      margin-bottom: 84px;
+    }
+  }
+
+  .club.page .section.teaser,
+  .page-template-template-blog .section.teaser {
+    .container {
+      padding-bottom: 30px;
+    }
+  }
+
+  .page-template-template-blog.partner .section.teaser .container {
+    padding-top: 113px;
+    padding-bottom: 84px;
+  }
+
+  .page-template-template-trainer {
+    .section.teaser .content {
+      margin-top: 100px;
+      margin-bottom: 77px;
+    }
+  }
+
+  .page.partner:not([class*=home]) .section.teaser .content {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .contact .slick-slide {
+    text-align: left;
+    .image-container {
+      height: 384px;
+      padding-bottom: 0;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  #club.section {
+    background-size: auto 647px;
+    background-position: 80% 38%;
+  }
+  #fitness.section {
+    background-size: auto 647px;
+    background-position: 85% 100%;
+  }
+  .parent-pageid-17.meine-ziele, .parent-pageid-17.moeglichkeiten {
+    .teaser.section {
+      background-position: left 85% top -40px;
+    }
+  }
+  #soccer.section,
+  .parent-pageid-19.fussballschule .teaser.section {
+    background-size: auto 777px;
+    background-position: 83% 15%;
+  }
+  #tennis.section,
+  .parent-pageid-21:not([class*=home]).meine-ziele .teaser.section {
+    background-position: 83% 3%;
+  }
+  #padel.section,
+  .parent-pageid-23:not([class*=home]).moeglichkeiten .teaser.section {
+    background-position: 81% 53%;
+  }
+
+  /*
+  .club.page .section.teaser {
+    background-position: 100% 100%;
+    background-size: initial;
+  }
+  */
+  .club.page:not([class*=home]) .section.teaser {
+    background-position: right -201px bottom 0;
+    background-size: 1447px;
+  }
+}
+
+@media all and (min-width: $screen-lg-min) {
+  .section.club_content .container > div {
+    &:not(:nth-child(3)) {
+      background-size: 169px auto;
+      background-position: left 0 top 93px;
+    }
+  }
+  .club.page:not([class*=home]) .section.teaser {
+    background-position: right -75px bottom 0;
+    background-size: 1447px;
+  }
+}
+
+@media all and (max-width: ($screen-sm-max) ) {
+  .trainer .section.teaser {
+    background-image: none !important;
+  }
+}
+
+@media all and (max-width: ($screen-xs-min - 1) ) {
+  .section {
+    &.teaser {
+      .content {
+        margin-bottom: (395px / 2);
+      }
+      &.has_event .content {
+        margin-bottom: (230px / 2);
+      }
+    }
+  }
+}
+
+@media all and (min-width: $screen-md-min) {
+  .section.teaser.skrollable {
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+.home .section.teaser.skrollable  .content, .home .section.teaser.skrollable.has_event .content, .home .section.teaser.skrollable .teaser-container {
+  @media all and (min-width: $screen-md-min) {
+    //position: fixed;
+    width: 465px;
+  }
+  @media all and (min-width: $screen-lg-min) {
+    width: 585px;
+  }
+}
+
+.section.gallery {
+  opacity: 0;
+  position: relative;
+  padding-bottom: 76.4%;
+  @media all and (min-width: $screen-md-min) {
+    padding-bottom: 51.0425%;
+  }
+  .top {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  .content {
+    padding-top: 40px;
+    @media all and (min-width: $screen-md-min) {
+      padding-top: 112px;
+    }
+  }
+  .title {
+    position: relative;
+    z-index: 2;
+  }
+  .slick-carousel {
+    margin-top: 0;
+  }
+  .slick {
+    &-carousel, &-list, &-track, &-slide {
+      height: 100%;
+    }
+    &-prev {
+      left: 20px;
+      z-index: 1;
+      @media all and (max-width: ($screen-xs-min - 1 )) {
+        top: 50%;
+      }
+    }
+    &-next {
+      right: 20px;
+      @media all and (max-width: ($screen-xs-min - 1 )) {
+        top: 50%;
+      }
+    }
+  }
+  .img-inner {
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 100%;
+    .content {
+      .title {
+        visibility: hidden;
+      }
+    }
+    .subtitle {
+      position: relative;
+      text-align: center;
+      color: #fff;
+      text-shadow: 0px 0px 20px rgba(27, 32, 26, 0.6);
+      opacity: 0;
+    }
+  }
+  .slick-outer-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+    overflow: hidden;
+    left: 0;
+  }
+}
+.section.gallery-caption {
+  padding-top: 40px;
+  background-color: rgb(243, 217, 194);
+  color: #fff;
+}
+
+.news-module {
+  background-color: #f3d9c2;
+  > .container {
+    @media all and (min-width: $screen-lg-min) {
+      padding-left: 78px;
+      padding-right: 78px;
+    }
+    @media all and (max-width: ($screen-xs-min - 1)) {
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
+  }
+  &__post {
+    @media all and (min-width: $screen-md-min) {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+    @media all and (min-width: $screen-lg-min) {
+      padding-left: 37px;
+      padding-right: 37px;
+    }
+  }
+  .text-center {
+    .title {
+      color: #ee7202;
+      padding-top: 115px;
+      padding-bottom: 30px;
+      @media all and(max-width: $screen-md-min - 1){
+        //float: left;
+        text-align: center;
+        padding: 30px 0 0 0px;
+      }
+      @media all and(max-width: $screen-xs-min - 1){
+        padding: 30px 15px 0 15px;
+      }
+    }
+  }
+  .date {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Khand';
+    span:last-of-type {
+      font-weight: normal;
+    }
+    @media all and(max-width: $screen-xs-min - 1){
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  .images {
+    img {
+      border: 5px solid #fff;
+      @media all and(max-width: $screen-md-min - 1){
+        //width: 50%;
+      }
+    }
+    @media all and(max-width: $screen-xs-min - 1){
+      padding-left: 15px;
+    }
+  }
+  .post-title {
+    font-weight: bold;
+    padding-top: 15px;
+    @media all and (min-width: $screen-sm-min){
+      font-size: 20px!important;
+    }
+    @media all and (min-width: $screen-md-min){
+      //width: 263px;
+      font-size: 21px!important;
+    }
+    @media all and(max-width: $screen-xs-min - 1){
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  .content {
+    @media all and(min-width: $screen-md-min){
+      font-size: 16px;
+    }
+    @media all and(max-width: $screen-xs-min - 1){
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    span {
+      @media all and(min-width: $screen-md-min){
+        font-size: 16px;
+      }
+    }
+    p {
+      padding-top: 10px;
+    }
+    p:last-of-type {
+      @media all and(min-width: $screen-md-min){
+        padding-bottom: 60px;
+        font-weight: bold;
+      }
+      @media all and(max-width: $screen-md-min - 1){
+        padding-bottom: 20px;
+        font-weight: bold;
+      }
+    }
+    @media all and(min-width: $screen-md-min){
+      //width: 263px;
+      max-with: 100%;
+    }
+  }
+  .button{
+    text-align: center;
+    padding-bottom: 90px;
+    @media all and(max-width: $screen-xs-min - 1){
+      padding-bottom: 50px;
+    }
+  }
+}
+.navigation {
+  padding: 20px 0 100px 0px;
+  ul{
+    @media all and(min-width: $screen-md-min){
+      padding-left: 55px;
+    }
+    @media all and(max-width: $screen-md-min - 1){
+      padding-left: 10px;
+    }
+    li {
+      float: left;
+      width: 64px;
+      height: 44px;
+      text-align: center;
+      list-style-type: none;
+      background-color: #faf0e7;
+      margin-right: 1px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      //cursor: pointer;
+      position: relative;
+      line-height: 44px;
+      a{
+        color: #ee7202;
+        vertical-align: middle;
+        margin: auto;
+        position: absolute;
+        //top: 10px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        @media all and(max-width: $screen-md-min - 1){
+          //top: 5px;
+        }
+        @media all and(max-width: $screen-xs-min - 1){
+          //top: 11px;
+        }
+      }
+      &.active {
+        background-color: #ee7202;
+        width: 64px;
+        height: 44px;
+        text-align: center;
+        list-style-type: none;
+        a {
+          color: #fff;
+          vertical-align: middle;
+        }
+      }
+    }
+    li:nth-child(4){
+      cursor: auto;
+    }
+  }
+}
+.filters-button-group {
+  .dropdown-menu {
+    li {
+      a{
+        padding: 3px 0;
+        &:hover{
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
+.entry-content {
+  padding-bottom: 60px;
+}
+header {
+  .collapse {
+    .nav-row {
+      li {
+        a {
+          @media all and(min-width: $screen-md-min){
+            padding-left: 10px;
+            padding-right: 10px;
+          }
+          @media all and(min-width: $screen-lg-min){
+            padding-left: 15px;
+            padding-right: 15px;
+          }
+        }
+      }
+      &.sub {
+        li {
+          a {
+            @media all and(min-width: $screen-md-min){
+              padding-left: 14px;
+              padding-right: 14px;
+            }
+            @media all and(min-width: $screen-lg-min) {
+              padding-left: 20px;
+              padding-right: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+#opening .holiday {
+  background-color: #CBE7D8;
+  padding-bottom: 50px;
+  &-title {
+    color: #fff;
+    margin-bottom: 10px;
+  }
+}
+.section.mobile_teaser {
+  .checkmark-list {
+    .download {
+      @media all and (min-width: $screen-xs-min) {
+        font-size: 24px!important;
+        font-weight: 100;
+        font-family: $font-family-sans-serif;
+      }
+      @media all and (min-width: $screen-md-min) {
+        font-size: 16px!important;
+      }
+      @media all and (max-width: $screen-xs-min) {
+        font-size: 14px!important;
+        font-weight: 100;
+        font-family: $font-family-sans-serif;
+      }
+    }
+  }
+}
+.text_star {
+  padding-top: 0!important;
+  padding-bottom: 30px!important;
+}
